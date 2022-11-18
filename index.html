@@ -1,0 +1,42 @@
+<html>
+
+<head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+	<link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="container">
+			<div class="home-container">
+				<h3>HOME</h3>
+				<div class="result-holder">
+					<p class="number" id="home-points">0</p>
+				</div>
+				<div class="button-holder">
+					<button onclick="increaseByOneHomePoint()">+1</button>
+					<button onclick="increaseByTwoHomePoint()">+2</button>
+					<button onclick="increaseByThreeHomePoint()">+3</button>
+				</div>
+			</div>
+			<div class="guest-container">
+				<h3>GUEST</h3>
+				<div class="result-holder">
+					<p class="number" id="guest-points">0</p>
+				</div>
+				<div class="button-holder">
+					<button onclick="increaseByOneGuestPoint()">+1</button>
+					<button onclick="increaseByTwoGuestPoint()">+2</button>
+					<button onclick="increaseByThreeGuestPoint()">+3</button>
+				</div>
+			</div>
+
+		</div>
+		<div class="reset-container">
+			<button class="reset-btn" onclick="reset()">NEW GAME</button>
+		</div>
+	</div>
+
+	<script src="index.js"></script>
+</body>
+
+</html>
